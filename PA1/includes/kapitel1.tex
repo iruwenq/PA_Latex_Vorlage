@@ -1,0 +1,79 @@
+\chapter{Einleitung}
+\label{chapter:kapitel1}
+
+Dieses Kapitel führt in den thematischen und fachlichen Kontext der Arbeit ein und erläutert
+die Problemstellung, die Zielsetzung der Untersuchung, die Methodik, sowie den Aufbau der Arbeit.
+
+% Hier beginnt der Text Ihrer Projektarbeit.
+% Empfehlung: Einleitung in Problemstellung, Zielsetzung und Aufbau gliedern.
+
+
+\section{Problemstellung und Ausgangssituation}
+\label{section:problemstellung}
+Die Instandhaltung industrieller Anlagen verlagert sich zunehmend von papierbasierten Verfahren hin zu digital gestützten, 
+mobilen Lösungen, die eine Dokumentation direkt am Einsatzort ermöglichen.\footcite[Vgl.][S. 291]{eisenmann_von_2023} 
+Die zugrunde liegenden Prozesse werden häufig im \ac{SAP}-Modul \ac{PM} (heute auch als SAP \ac{EAM} 
+bezeichnet) abgebildet. Für den mobilen Zugriff kommen vermehrt Anwendungen auf Basis der Oberflächentechnologie SAP Fiori zum Einsatz.
+
+Im betrachteten Fall wird eine SAP-Fiori-Anwendung zur Bilddokumentation von Instandhaltungsmeldungen genutzt. Anwender können Bilder 
+zu Meldungen erfassen, prüfen und mit dem zugehörigen PM-Datensatz verknüpfen. Die Anwendung wurde bereits produktiv eingesetzt, 
+ihre Gebrauchstauglichkeit jedoch bislang nicht systematisch untersucht.
+
+Gebrauchstauglichkeit beschreibt das Ausmaß, in dem ein Produkt, System oder eine Dienstleistung von bestimmten Nutzenden in einem 
+definierten Nutzungskontext effektiv, effizient und zufriedenstellend verwendet werden kann.\footcite[Vgl.][Abschnitt~3.1]{DIN_ISO_9241-11:2018}
+Im laufenden Betrieb wurden Hinweise auf Bedienprobleme und potenzielle Effizienzverluste festgestellt,\footnote{Vgl. Gespräch mit Kaiser 2026, Anhang~\ref{anhang:gespraech}.} deren Ursachen bislang nicht 
+strukturiert analysiert wurden. Dadurch fehlt eine fundierte Grundlage zur Bewertung der Gebrauchstauglichkeit und zur gezielten 
+Ableitung von Verbesserungsmaßnahmen.
+
+Als anerkannter Bewertungsmaßstab können die Interaktionsprinzipien der ISO 9241-110 (2020) herangezogen werden. Aus der fehlenden 
+systematischen Bewertung der Gebrauchstauglichkeit ergibt sich der Bedarf einer strukturierten Untersuchung, aus dem die nachfolgend 
+dargestellte Zielsetzung und Forschungsfrage abgeleitet werden.
+
+\section{Zielsetzung und Forschungsfrage}
+\label{section:zielsetzung}
+Ziel der vorliegenden Projektarbeit ist es, die Gebrauchstauglichkeit der untersuchten SAP-Fiori-Anwendung zur mobilen Instandhaltung 
+systematisch und nachvollziehbar zu bewerten und auf dieser Grundlage konkrete Optimierungspotenziale aufzuzeigen. 
+Damit soll die in der Problemstellung dargelegte Lücke einer bislang fehlenden, objektivierbaren Bewertungsgrundlage geschlossen werden.
+
+Die \textbf{Forschungsfrage} lautet: Inwieweit erfüllt eine SAP-Fiori-Anwendung zur mobilen Instandhaltung die Interaktionsprinzipien der ISO 9241-110 
+und welche Optimierungspotenziale lassen sich aus einer heuristischen Evaluation ableiten?
+
+
+\section{Methodik der Arbeit}
+\label{section:methodik}
+
+Zur Beantwortung der Forschungsfrage wird ein zweistufiges Vorgehen gewählt, das einen theoretisch-konzeptionellen und einen darauf 
+aufbauenden evaluativ-anwendungsorientierten Teil enthält. Im ersten Schritt werden die begrifflichen und normativen Grundlagen zu 
+Gebrauchstauglichkeit, den Interaktionsprinzipien der ISO 9241-110 sowie zur Methode der heuristischen Evaluation auf Basis 
+entsprechender Fachliteratur und der relevanten Normen aufgearbeitet. Sie bilden den Bezugsrahmen für die anschließende Untersuchung.
+
+Als Untersuchungsmethode dient die heuristische Evaluation in Form einer Experteninspektion. Dabei wird die Anwendung anhand etablierter
+Bewertungskriterien systematisch auf Usability-Probleme geprüft, ohne dass nutzerbasierte Tests durchgeführt werden. Die Wahl dieses Verfahrens 
+ergibt sich aus seiner ressourcenökonomischen und expertenorientierten Ausrichtung, die eine strukturierte Bewertung der Gebrauchstauglichkeit 
+auch ohne umfangreiche Nutzerstudien ermöglicht. In Abgrenzung zu nutzerbasierten Verfahren beruht die Bewertung damit auf einer 
+kriteriengeleiteten Inspektion und nicht auf der Beobachtung tatsächlichen Nutzerverhaltens.
+
+Die ISO 9241-11 ordnet ein solches Vorgehen methodisch ein, indem sie zwischen einer Prüfung durch Benutzer und einer expertenbasierten Evaluierung
+unterscheidet und die Überprüfung auf Abweichungen von festgelegten Kriterien sowie die Erfassung von Anzahl und Schweregrad der Probleme 
+als anerkannte Evaluierungsansätze benennt.\footcite[Vgl.][Abschnitt~B.1]{DIN_ISO_9241-11:2018}
+
+Als Bewertungsmaßstab werden die Interaktionsprinzipien der ISO 9241-110 zu einem Kriterienkatalog operationalisiert, der die normativen 
+Vorgaben in überprüfbare Bewertungskriterien überführt und als Soll-Maßstab der Untersuchung dient.\footcite[Vgl.][Abschnitt~1]{DIN_ISO_9241-110:2020} Gegen
+diesen Katalog wird die Anwendung systematisch geprüft. Die identifizierten Usability-Probleme werden dokumentiert, nach ihrem Schweregrad 
+eingeordnet und abschließend zu konkreten Optimierungspotenzialen ausgearbeitet.
+
+Eine methodische Einschränkung besteht darin, dass der Verfasser die im Rahmen dieser Untersuchung 
+identifizierten Abweichungen im Anschluss an die Evaluation selbst als Entwickler beheben wird. 
+Diese nachgelagerte Rollenübernahme wird transparent gemacht und im weiteren Verlauf methodisch 
+reflektiert (Kapitel~\ref{grenzen}).
+
+\section{Aufbau und Struktur der Arbeit}
+\label{section:struktur}
+Die Arbeit umfasst sechs Kapitel. In Kapitel \ref{chapter:kapitel2} werden die theoretischen Grundlagen der Heuristischen Evaluation, sowie der 
+Interaktionsprinzipien vermittelt. Kapitel \ref{chapter:kapitel3} beschreibt den Anwendungskontext, indem es die Instandhaltungsprozesse und ihre 
+Abbildung in SAP Fiori als technologische Grundlage sowie den konkreten Untersuchungsgegenstand und dessen Nutzungskontext darstellt. 
+Kapitel \ref{chapter:kapitel4} bildet den anwendungsorientierten Kern der Arbeit, in dem die Interaktionsprinzipien zu einem Kriterienkatalog 
+operationalisiert, der Erfüllungsgrad der Anwendung ermittelt, die Schwachstellen nach Schweregrad bewertet und daraus 
+Optimierungspotenziale abgeleitet werden. Kapitel \ref{chapter:kapitel5} ordnet die Befunde in den Gesamtkontext ein und reflektiert die methodischen 
+Grenzen der Untersuchung. Kapitel \ref{chapter:kapitel6} fasst die wesentlichen Ergebnisse zusammen und schließt mit einer kritischen Würdigung sowie einem 
+Ausblick.

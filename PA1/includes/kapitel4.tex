@@ -1,0 +1,418 @@
+\chapter{Heuristische Evaluation der Anwendung}
+\label{chapter:kapitel4}
+Durchführung der eigentlichen Evaluation auf Basis eines operationalisierten
+Kriterienkatalogs, Dokumentation der Befunde mit Schweregradbewertung und
+Ableitung von Optimierungspotenzialen.
+
+\section{Untersuchungsdesign und Operationalisierung}
+\label{section:untersuchungsdesign}
+
+Die Untersuchung erfolgt als heuristische Evaluation in Form einer
+Experteninspektion.
+Statt die Anwendung durch Endnutzer erproben zu lassen, prüft der Evaluator sie
+systematisch gegen einen zuvor festgelegten
+Kriterienkatalog.\footcite[Vgl.][S.~254 f.]{nielsen1990heuristic}
+Dazu durchläuft er die für die Bilddokumentation relevanten Aufgabenpfade
+mehrfach und gleicht die einzelnen Dialogelemente mit den Prüfkriterien ab.
+Der Inspektionsumfang beschränkt sich auf die in
+Kapitel~\ref{section:untersuchungsgegenstand} beschriebenen Funktionen.
+Dass der Verfasser die identifizierten Abweichungen im Anschluss selbst als
+Entwickler behebt, ist eine methodische Einschränkung und wird in
+Kapitel~\ref{grenzen} reflektiert.
+
+Als Bewertungsmaßstab dienen die sieben Interaktionsprinzipien der ISO~9241-110
+(Kapitel~\ref{grundsaetzeISO}).
+Da sie abstrakt formuliert sind, werden sie für die Evaluation operationalisiert,
+also in überprüfbare Prüfkriterien überführt.
+Grundlage ist die normeigene Anwendungstabelle (Tabelle~A.1), die zu jedem
+Prinzip konkrete Gestaltungsempfehlungen
+aufführt.\footcite[Vgl.][Tabelle~A.1]{DIN_ISO_9241-110:2020}
+Jede Empfehlung wird zunächst auf ihre Anwendbarkeit im vorliegenden
+Nutzungskontext geprüft.
+Nicht anwendbare Empfehlungen werden ausgeschlossen, wie es die Norm vorsieht.
+Von den 64 Einzelempfehlungen entfallen so 22.
+Die verbleibenden 42 werden zu 41 aufgabenbezogenen Prüffragen operationalisiert,
+die sich mit \enquote{erfüllt} oder \enquote{Abweichung} beantworten lassen,
+wobei Kriterium~7.4 zwei Empfehlungen zur Vertrauenswürdigkeit
+bündelt.\footcite[Vgl.][Tabelle~A.1]{DIN_ISO_9241-110:2020}
+Der Kriterienkatalog ist in Anhang~\ref{anhang:kriterienkatalog} vollständig
+dokumentiert und lässt sich grundsätzlich auf vergleichbare mobile
+SAP-Fiori-Anwendungen übertragen.
+
+Jede festgestellte Abweichung wird als Usability-Problem dokumentiert, dem
+verletzten Prinzip zugeordnet und nach \ac{SG} eingestuft.
+Dafür dient die fünfstufige Skala nach Nielsen, die von
+\enquote{kein Usability-Problem} (0) bis \enquote{Usability-Katastrophe} (4)
+reicht.\footcite[Vgl.][S.~47]{nielsen1994heuristic}
+Die Einstufung richtet sich nach Häufigkeit, Schwere der Auswirkung und
+Persistenz des Problems.\footcite[Vgl.][S.~47]{nielsen1994heuristic}
+
+\begin{table}[htbp]
+\centering
+\caption[Schweregradskala nach Nielsen]{Schweregradskala nach
+Nielsen\footcite[Mit Änderungen entnommen aus:][S.~47]{nielsen1994heuristic}}
+\label{tab:schweregrade}
+\begin{tabularx}{0.98\textwidth}{|c|>{\RaggedRight}X|}
+\hline
+\textbf{Grad} & \textbf{Bedeutung} \\\hline
+0 & Kein Usability-Problem \\\hline
+1 & Kosmetisches Problem - Behebung nur bei freier Kapazität \\\hline
+2 & Geringfügiges Problem - niedrige Behebungspriorität \\\hline
+3 & Schwerwiegendes Problem - hohe Behebungspriorität \\\hline
+4 & Usability-Katastrophe - Behebung vor Auslieferung zwingend \\\hline
+\end{tabularx}
+\end{table}
+
+Um die Forschungsfrage nach dem \emph{Inwieweit} der Erfüllung zu beantworten,
+wird je Prinzip ein Erfüllungsgrad aus den zugehörigen Prüfkriterien abgeleitet.
+Ein Prinzip gilt als \emph{erfüllt}, wenn keine oder nur kosmetische Abweichungen
+(Schweregrad~$\leq 1$) vorliegen, als \emph{teilweise erfüllt} bei Abweichungen
+bis Schweregrad~3 und als \emph{nicht erfüllt}, sobald eine Abweichung des
+Schweregrades~4 oder mehrere des Schweregrades~3 auftreten.
+Diese Zuordnung macht die Bewertung in Kapitel~\ref{section:ergebnisse}
+nachvollziehbar und vergleichbar.
+
+
+\section{Ergebnisse und Schweregradbewertung}
+\label{section:ergebnisse}
+
+Geprüft wurden die 41 im Nutzungskontext anwendbaren Kriterien des
+Kriterienkatalogs.
+Bei 11 davon wurde eine Abweichung festgestellt, 30 waren erfüllt.
+Die Abweichungen verteilen sich auf zwei Befunde des Schweregrades~1, fünf des
+Schweregrades~2 und vier des Schweregrades~3.
+Eine Usability-Katastrophe (Schweregrad~4) trat nicht auf
+(vgl. Tabelle~\ref{tab:schweregrade}).
+Die Darstellung erfolgt prinzipienweise.
+Je Prinzip werden zunächst die erfüllten Kriterien genannt, dann die Abweichungen
+einzeln, jeweils mit verletzter Normanforderung, konkreter Beobachtung und
+Begründung der Schweregradeinstufung.
+Abschließend wird der Erfüllungsgrad nach der in
+Kapitel~\ref{section:untersuchungsdesign} festgelegten Logik bestimmt.\\
+\textbf{Prinzip 1 -- Aufgabenangemessenheit:}
+Für die Aufgabenangemessenheit wurden fünf Kriterien geprüft, keines wies eine
+Abweichung auf.
+Die Anwendung macht ihren Zweck, die fotografische Dokumentation zu einer
+bestehenden Instandhaltungsmeldung, hinreichend deutlich (Kriterium~1.1), und in
+jedem Schritt des Ablaufs, von der Meldungsauswahl über die Fotoaufnahme bis zur
+Fotoverwaltung, stehen die erforderlichen Steuerelemente und Informationen bereit
+(Kriterium~1.2).
+Da der Funktionsumfang bewusst eng auf den Dokumentationszweck zugeschnitten ist
+(vgl. Kapitel~\ref{section:untersuchungsgegenstand}), enthält die Anwendung
+nichts, was von der Aufgabe ablenkt (Kriterium~1.3).
+Sie bietet Vorbelegungen dort, wo sie zweckmäßig sind, und vermeidet solche, die
+eine Fehlzuordnung der Fotos begünstigen könnten (Kriterien~1.4 und~1.5).
+Das Prinzip gilt als \emph{erfüllt}.\\
+\textbf{Prinzip 2 -- Selbstbeschreibungsfähigkeit:}
+Von sieben Kriterien waren vier erfüllt.
+Die erforderlichen Steuerelemente lassen sich zuverlässig auffinden
+(Kriterium~2.2), der Bearbeitungsfortschritt ist über die Zahl erfasster Fotos
+und den Bezug zur gewählten Meldung erkennbar (Kriterium~2.5), das Übernehmen
+oder Verwerfen eines Fotos wird zurückgemeldet (Kriterium~2.6), und es ist
+erkennbar, dass zunächst eine Meldung auszuwählen ist, bevor die Fotofunktionen
+bereitstehen (Kriterium~2.7).
+Drei Kriterien wiesen Abweichungen auf.
+\newpage
+
+Nach der Norm soll ein System eindeutig anzeigen, wo sich Benutzende befinden,
+welche Handlungen möglich und welche Einstellungen wirksam
+sind.\footcite[Vgl.][Abschnitt~5.2.2.2]{DIN_ISO_9241-110:2020}
+In der Meldungssuche ist der wirksame Zustand nur eingeschränkt erkennbar.
+Welche Filter aktiv sind, steht abseits im oberen rechten Fensterbereich und ist
+leicht zu übersehen.
+An einzelnen Bedienschritten fehlen zudem Hinweise auf die möglichen Aktionen
+(Kriterium~2.1).
+Da die Meldungssuche den Einstieg in jeden Vorgang bildet, tritt der Mangel
+regelmäßig auf.
+Seine Auswirkung bleibt moderat, weil ein übersehener Filter zu einer leeren oder
+unvollständigen Trefferliste führt, den Vorgang aber nicht blockiert.
+Die Abweichung wird als Schweregrad~2 eingestuft.
+
+Interaktive Elemente sollen klar als solche erkennbar
+sein.\footcite[Vgl.][Abschnitt~5.2.2.4]{DIN_ISO_9241-110:2020}
+Die Buttons sind jedoch uneinheitlich gestaltet.
+Einer erscheint blau gefüllt mit weißer Fettschrift, ein anderer nur blau
+umrandet mit dünner blauer Schrift, sodass ihr Interaktionscharakter weniger
+unmittelbar erschließbar ist (Kriterium~2.3).
+Da die Schaltflächen bedienbar bleiben und die Aufgabenerledigung nicht behindert
+wird, gilt der Befund als kosmetische Abweichung mit Schweregrad~1.
+
+Informationen sollen in einem den Benutzenden vertrauten Vokabular
+erscheinen.\footcite[Vgl.][Abschnitt~5.2.2.5]{DIN_ISO_9241-110:2020}
+Die Meldungsart wird jedoch allein als SAP-internes Kürzel wie \enquote{M1}
+angezeigt, ohne Klartext (Kriterium~2.4).
+Für die handwerklich geprägte, mit SAP wenig vertraute Nutzergruppe
+(vgl. Kapitel~\ref{section:untersuchungsgegenstand}) bleibt damit unklar, welche
+Meldungsart sich hinter dem Kürzel verbirgt.
+Das Kürzel erscheint bei jeder Meldungsauswahl und betrifft mit der
+Identifikation der richtigen Meldung einen zentralen Schritt.
+Da sich das Vokabular bei nur etwa zweimal wöchentlicher Nutzung kaum einprägt,
+wirkt der Mangel dauerhaft und kann eine Fehlauswahl begünstigen.
+Weil die angezeigten Stammdaten eine Fehlauswahl aber erkennen und korrigieren
+lassen (vgl. Kriterium~6.7), bleibt die Auswirkung begrenzt und die Abweichung
+wird als Schweregrad~2 eingestuft.
+Mit den Kriterien~2.1 und~2.4 liegen zwei Abweichungen des Schweregrades~2 vor.
+Das Prinzip gilt als \emph{teilweise erfüllt}.\\
+\textbf{Prinzip 3 -- Erwartungskonformität:}
+Von sieben Kriterien waren fünf erfüllt.
+Die Ablaufschritte entsprechen dem Aufgabenverständnis der
+Instandhaltungsmitarbeitenden (Kriterium~3.1), unmittelbare Handlungen wie das
+Auslösen der Kamera werden sofort zurückgemeldet (Kriterium~3.2), Elemente
+unterschiedlichen Zwecks sind erkennbar abgegrenzt (Kriterium~3.5), auf
+Änderungen angeschlossener Ressourcen reagiert die Anwendung angemessen
+(Kriterium~3.6), und die Inhalte werden auf der Smartphone-Anzeige passend
+dargestellt (Kriterium~3.7).
+Zwei Kriterien wiesen Abweichungen auf.
+
+Bei erwartbar langen Reaktionszeiten soll eine Fortschrittsinformation ausgegeben
+werden.\footcite[Vgl.][Abschnitt~5.3.2.4]{DIN_ISO_9241-110:2020}
+Beim Laden der Meldungsliste oder beim Hochladen von Fotos über das Standort-WLAN
+bleibt eine solche Anzeige jedoch aus, sodass nicht erkennbar ist, ob das System
+noch arbeitet (Kriterium~3.3).
+Das kann Benutzende dazu verleiten, eine Aktion für fehlgeschlagen zu halten und
+zu wiederholen.
+Da die Aufgabe erschwert, aber nicht verhindert wird, gilt die Abweichung als
+Schweregrad~2.
+
+Für die Darstellung sollen den Benutzenden vertraute sprachliche Konventionen
+verwendet werden.\footcite[Vgl.][Abschnitt~5.3.3.1]{DIN_ISO_9241-110:2020}
+Deutsche und englische Oberflächentexte wechseln sich jedoch ohne erkennbare
+Systematik ab (Kriterium~3.4), was der Erwartung einer durchgängig
+deutschsprachigen Oberfläche
+(vgl. Kapitel~\ref{section:untersuchungsgegenstand}) widerspricht.
+Da die Sprachmischung die gesamte Anwendung durchzieht und das Verständnis der
+überwiegend nicht englischsprachig arbeitenden Nutzergruppe spürbar erschwert,
+wird die Abweichung als Schweregrad~3 eingestuft.
+Damit gilt das Prinzip als \emph{teilweise erfüllt}.\\
+\textbf{Prinzip 4 -- Erlernbarkeit:}
+Alle vier geprüften Kriterien waren erfüllt.
+Die Anwendung unterstützt Benutzende dabei, die nötigen Funktionen selbstständig
+zu entdecken und zielführend zu nutzen (Kriterium~4.1).
+Sie lässt sich gefahrlos erkunden, da jede Aufnahme vor der Übernahme in einer
+Vorschau geprüft und ohne Folgen verworfen werden kann (Kriterium~4.2).
+Für das Auffinden der richtigen Meldung stehen mit Filterkriterien und
+Freitextsuche alternative Wege bereit (Kriterium~4.3), und Rückmeldungen lassen
+die Folgen der eigenen Aktionen erkennen (Kriterium~4.4).
+Das Prinzip gilt als \emph{erfüllt}.\\
+\textbf{Prinzip 5 -- Steuerbarkeit:}
+Alle vier geprüften Kriterien waren erfüllt.
+Benutzende können den Vorgang jederzeit unterbrechen (Kriterium~5.1) und
+fortsetzen, ohne Meldungsauswahl oder erfasste Fotos zu verlieren (Kriterium~5.2).
+Für die Bilderfassung stehen mit Gerätekamera und Datei-Upload zwei Wege zur
+Verfügung (Kriterium~5.3), und zumindest die letzte Aktion lässt sich rückgängig
+machen, indem ein Foto verworfen oder wieder entfernt wird (Kriterium~5.4).
+Das Prinzip gilt als \emph{erfüllt}.\\
+\textbf{Prinzip 6 -- Robustheit gegen Benutzungsfehler:}
+Mit fünf Abweichungen bei zehn Kriterien wies dieses Prinzip die meisten Befunde
+auf.
+Erfüllt waren die Vermeidung erneuter Eingabe bereits vorhandener Informationen
+(Kriterium~6.1), die Meldungsauswahl über eine Suchhilfe nach dem Prinzip der
+Wiedererkennung (Kriterium~6.2), die Sicherung erfasster Fotos gegen Verlust
+durch System- oder Verbindungsfehler (Kriterium~6.4), die Unterstützung beim
+Erkennen einer Fehlauswahl über die angezeigten Stammdaten (Kriterium~6.7) sowie
+der geringe Korrekturaufwand (Kriterium~6.10).
+Die fünf Abweichungen betreffen Fehlervermeidung, Fehlererkennung und
+Fehlerbehebung.
+
+Es sollen nur aktuell gültige Auswahlmöglichkeiten zugelassen
+werden.\footcite[Vgl.][Abschnitt~5.6.2.3]{DIN_ISO_9241-110:2020}
+In der Meldungssuche lassen sich jedoch einander ausschließende Filter
+kombinieren.
+Nach Auswahl einer Kostenstelle (etwa KST6336) bleibt eine Maschine (etwa
+Index G-550) wählbar, die dieser Kostenstelle nicht zugeordnet ist, sodass die
+Suche zwangsläufig ohne Ergebnis bleibt (Kriterium~6.3).
+Der Fall tritt nur bei bestimmten Kombinationen auf und lässt sich durch Anpassen
+der Filter auflösen.
+Die Abweichung wird als Schweregrad~2 eingestuft.
+
+Eingabefehler sollen bereits vor der Weiterverarbeitung erkannt
+werden.\footcite[Vgl.][Abschnitt~5.6.2.5]{DIN_ISO_9241-110:2020}
+Beim Hochladen einer Datei ungeeigneten Formats bleibt jede Rückmeldung aus.
+Die Datei wird ohne Hinweis verworfen (Kriterium~6.5).
+Benutzende gehen dann davon aus, das Foto sei erfasst, während es tatsächlich
+fehlt, sodass eine Lücke in der Dokumentation entsteht, die womöglich erst bei
+der späteren Schadensanalyse auffällt.
+Wegen dieser gravierenden und ohne Rückmeldung nicht erkennbaren Auswirkung wird
+die Abweichung als Schweregrad~3 eingestuft.
+
+Vor Handlungen mit schwerwiegenden Auswirkungen soll das System eine Bestätigung
+einholen.\footcite[Vgl.][Abschnitt~5.6.2.6]{DIN_ISO_9241-110:2020}
+Ein bereits erfasstes Foto wird jedoch mit einem einzigen Klick und ohne Rückfrage
+gelöscht (Kriterium~6.6).
+Da es sich vor Ort nicht ohne Weiteres erneut aufnehmen lässt, der dokumentierte
+Zustand am Objekt besteht dann möglicherweise nicht mehr, kann eine Fehlbedienung
+unmittelbar zu unwiederbringlichem Datenverlust führen.
+Der Verlust setzt zwar eine Fehlbedienung voraus und tritt selten auf.
+Wegen der Unumkehrbarkeit wird die Abweichung aber nicht als kosmetisch, sondern
+als Schweregrad~2 eingestuft.
+
+Die beiden verbleibenden Abweichungen gehen auf dasselbe Fehlverhalten bei
+Fehlermeldungen zurück.
+Bei manchen Fehlern erscheint zwar ein Popup, es enthält aber nur den Hinweis
+\enquote{Fehlermeldung kann nicht geladen werden} statt des eigentlichen
+Fehlertextes.
+Damit ist die Anforderung, präzise und ohne Fachkenntnisse verständliche
+Fehlermeldungen
+auszugeben,\footcite[Vgl.][Abschnitt~5.6.4.2]{DIN_ISO_9241-110:2020} nicht erfüllt
+(Kriterium~6.8).
+Das Popup zeigt an, dass ein Problem vorliegt, benennt aber weder Art noch
+Ursache, sodass Benutzende genau in der Störungssituation ohne verwertbare
+Rückmeldung dastehen.
+Wegen dieser in jedem Fehlerfall auftretenden Intransparenz wird der Befund als
+Schweregrad~3 eingestuft.
+Zugleich soll eine Fehlermeldung konstruktive Erläuterungen zu ihrer Behebung
+liefern.\footcite[Vgl.][Abschnitt~5.6.4.3]{DIN_ISO_9241-110:2020}
+Die Meldung nennt jedoch keine Handlungsanweisung, mit der Benutzende den Fehler
+selbst beheben könnten (Kriterium~6.9).
+Da sie ohne eine solche Anweisung den Vorgang nicht fortsetzen können und auf
+fremde Unterstützung angewiesen sind, wird auch dieser Befund als Schweregrad~3
+eingestuft.
+Mit den Kriterien~6.5, 6.8 und~6.9 liegen drei Abweichungen des Schweregrades~3
+vor.
+Das Prinzip gilt als \emph{nicht erfüllt}.\\
+\textbf{Prinzip 7 -- Benutzerbindung:}
+Von vier Kriterien waren drei erfüllt.
+Die Anwendung bestätigt die erfolgreiche Erfassung und Zuordnung der Fotos und
+macht erkennbar, dass keine offenen Schritte verbleiben (Kriterium~7.1).
+Sie benennt die Fotos automatisch aus Meldungsnummer und fortlaufender Nummer und
+ordnet sie der Meldung zu (Kriterium~7.2), und die nachvollziehbare Ablage
+rechtfertigt das Vertrauen in eine korrekte und zuverlässige Speicherung
+(Kriterium~7.4).
+Eine Abweichung wurde festgestellt.
+
+Die Anwendung soll keine unverhältnismäßigen Anforderungen an die Benutzenden
+stellen.\footcite[Vgl.][Abschnitt~5.7.2.7]{DIN_ISO_9241-110:2020}
+Die Bedienung ist jedoch nicht auf die erschwerten Bedingungen in der Produktion
+ausgelegt.
+Insbesondere fehlt eine Anpassung an die Bedienung mit Handschuhen, die situativ
+getragen werden (Kriterium~7.3,
+vgl. Kapitel~\ref{section:untersuchungsgegenstand}).
+Da die Handschuhe nur zeitweise getragen werden, sich die Erschwernis durch
+kurzes Ablegen umgehen lässt und für die Dokumentation genügend Zeit bleibt, gilt
+die Abweichung als kosmetischer Mangel mit Schweregrad~1.
+Damit gilt das Prinzip als \emph{erfüllt}.
+
+\bigskip
+Tabelle~\ref{tab:erfuellungsgrad} fasst die Bewertung zusammen.
+Von den sieben Prinzipien sind vier erfüllt, zwei teilweise erfüllt und eines,
+die Robustheit gegen Benutzungsfehler, nicht erfüllt.
+Die Abweichungen konzentrieren sich auf Selbstbeschreibungsfähigkeit,
+Erwartungskonformität und vor allem Robustheit gegen Benutzungsfehler, während
+die aufgabenbezogenen Prinzipien Aufgabenangemessenheit, Erlernbarkeit und
+Steuerbarkeit vollständig erfüllt sind.
+
+\begin{table}[htbp]
+\centering
+\caption{Erfüllungsgrad der Interaktionsprinzipien im Überblick}
+\label{tab:erfuellungsgrad}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight}X|c|c|c|c|}
+\hline
+\textbf{Prinzip} & \textbf{Geprüft} & \textbf{Abw.} & \textbf{Max. SG} & \textbf{Erfüllungsgrad} \\\hline
+1 Aufgabenangemessenheit & 5 & 0 & 0 & erfüllt \\\hline
+2 Selbstbeschreibungsfähigkeit & 7 & 3 & 2 & teilweise erfüllt \\\hline
+3 Erwartungskonformität & 7 & 2 & 3 & teilweise erfüllt \\\hline
+4 Erlernbarkeit & 4 & 0 & 0 & erfüllt \\\hline
+5 Steuerbarkeit & 4 & 0 & 0 & erfüllt \\\hline
+6 Robustheit gegen Benutzungsfehler & 10 & 5 & 3 & nicht erfüllt \\\hline
+7 Benutzerbindung & 4 & 1 & 1 & erfüllt \\\hline
+\end{tabularx}
+\end{table}
+
+
+\section{Optimierungspotenziale}
+\label{section:optimierungspotenziale}
+
+Aus den in Kapitel~\ref{section:ergebnisse} dokumentierten Abweichungen lassen
+sich konkrete Optimierungspotenziale ableiten, erfüllte Kriterien erfordern keine
+Maßnahme.
+Die Priorisierung folgt dem Schweregrad, der nach Nielsen unmittelbar den
+Behebungsaufwand priorisiert.\footcite[Vgl.][S.~47]{nielsen1994heuristic}
+Abweichungen mit gemeinsamer Ursache oder gemeinsamem Themenfeld werden zu einem
+Maßnahmenbündel zusammengefasst, das die Priorität seiner schwerwiegendsten
+Abweichung erhält.
+Bündel mit Schweregrad~3 werden mit hoher, solche mit maximal Schweregrad~2 mit
+mittlerer und rein kosmetische Befunde mit niedriger Priorität eingeordnet
+(vgl. Tabelle~\ref{tab:optimierung}).
+
+\textbf{Robustheit gegen Benutzungsfehler:}
+Der größte Handlungsbedarf besteht beim einzigen nicht erfüllten Prinzip.
+Beim Hochladen einer Datei ungeeigneten Formats sollte die Anwendung das Format
+prüfen und unmittelbar zurückmelden, statt die Datei unbemerkt zu verwerfen
+(Kriterium~6.5).
+Das erkennt Eingabefehler vor der
+Weiterverarbeitung\footcite[Vgl.][Abschnitt~5.6.2.5]{DIN_ISO_9241-110:2020} und
+verhindert unbemerkte Lücken in der Bilddokumentation.
+Die bei Ladefehlern ausgegebene Meldung sollte den eigentlichen Fehlertext
+zuverlässig anzeigen, ihn zielgruppengerecht formulieren und um eine konkrete
+Handlungsanweisung ergänzen, etwa den Hinweis, dass die Meldungsliste nicht
+geladen werden konnte, verbunden mit der Empfehlung, den Vorgang erneut zu starten
+(Kriterien~6.8 und~6.9).
+So entstehen präzise, verständliche Fehlermeldungen mit konstruktiven
+Erläuterungen.\footcites[Vgl.][Abschnitt~5.6.4.2]{DIN_ISO_9241-110:2020}[Vgl.][Abschnitt~5.6.4.3]{DIN_ISO_9241-110:2020}
+Vor dem Löschen eines erfassten Fotos sollte eine Bestätigung abgefragt werden
+(Kriterium~6.6), um unwiederbringlichen Datenverlust durch Fehlbedienung zu
+vermeiden.\footcite[Vgl.][Abschnitt~5.6.2.6]{DIN_ISO_9241-110:2020}
+Schließlich sollten in der Meldungssuche abhängige Filter so verknüpft werden,
+dass nach einer Auswahl nur noch passende Folgewerte erscheinen (Kriterium~6.3).
+Das lässt ausschließlich gültige Auswahlmöglichkeiten
+zu\footcite[Vgl.][Abschnitt~5.6.2.3]{DIN_ISO_9241-110:2020} und schließt
+ergebnislose Kombinationen aus.\\
+\textbf{Verständlichkeit von Begriffen und Sprache:}
+Ebenfalls hohe Priorität hat die Verständlichkeit für die handwerklich geprägte,
+mit SAP wenig vertraute Nutzergruppe
+(vgl. Kapitel~\ref{section:untersuchungsgegenstand}).
+Die Meldungsart sollte zusätzlich zum internen Kürzel im Klartext erscheinen
+(Kriterium~2.4), damit Informationen in vertrautem Vokabular dargestellt
+werden,\footcite[Vgl.][Abschnitt~5.2.2.5]{DIN_ISO_9241-110:2020} und die
+Oberflächentexte sollten durchgängig deutsch gehalten werden (Kriterium~3.4), um
+vertrauten sprachlichen Konventionen zu
+entsprechen.\footcite[Vgl.][Abschnitt~5.3.3.1]{DIN_ISO_9241-110:2020}
+Beide Maßnahmen senken das Risiko einer Fehlauswahl der Meldung und damit einer
+Fehlzuordnung der Fotos.\\
+\textbf{Transparenz von Systemzustand und Rückmeldung:}
+Mit mittlerer Priorität sollte die Erkennbarkeit des Systemzustands verbessert
+werden.
+Die aktiven Filter sollten sichtbar und zentral im Suchbereich erscheinen statt
+abseits am oberen Fensterrand (Kriterium~2.1), sodass jederzeit erkennbar ist,
+welche Einstellungen
+wirken.\footcite[Vgl.][Abschnitt~5.2.2.2]{DIN_ISO_9241-110:2020}
+Bei länger dauernden Vorgängen wie dem Laden der Meldungsliste oder dem Hochladen
+von Fotos sollte eine Warte- oder Fortschrittsanzeige erscheinen (Kriterium~3.3),
+damit erkennbar bleibt, dass das System
+arbeitet.\footcite[Vgl.][Abschnitt~5.3.2.4]{DIN_ISO_9241-110:2020}\\
+\textbf{Konsistenz der Oberflächengestaltung:}
+Mit niedriger Priorität empfiehlt sich, die Schaltflächen nach einem einheitlichen
+Schema zu gestalten, das primäre und sekundäre Aktionen klar unterscheidet
+(Kriterium~2.3), damit ihr Interaktionscharakter unmittelbarer erkennbar
+wird.\footcite[Vgl.][Abschnitt~5.2.2.4]{DIN_ISO_9241-110:2020}\\
+\textbf{Anpassung an den Einsatzkontext vor Ort:}
+Ebenfalls niedrige Priorität hat die Anpassung an die Einsatzbedingungen vor Ort,
+insbesondere größere, auch mit Handschuhen sicher bedienbare Bedienelemente
+(Kriterium~7.3), um keine unverhältnismäßigen Anforderungen zu
+stellen.\footcite[Vgl.][Abschnitt~5.7.2.7]{DIN_ISO_9241-110:2020}
+
+Tabelle~\ref{tab:optimierung} fasst die abgeleiteten Maßnahmen mit
+Kriteriumsbezug, Schweregrad und Priorität zusammen.
+
+\begin{table}[htbp]
+\centering
+\caption{Abgeleitete Optimierungspotenziale im Überblick}
+\label{tab:optimierung}
+{\footnotesize
+\begin{tabularx}{\textwidth}{|c|>{\RaggedRight}X|c|c|}
+\hline
+\textbf{Krit.} & \textbf{Maßnahme} & \textbf{SG} & \textbf{Priorität} \\\hline
+6.5 & Dateiformat prüfen und Upload-Fehler zurückmelden & 3 & hoch \\\hline
+6.8 & Fehlertext korrekt anzeigen & 3 & hoch \\\hline
+6.9 & Fehlermeldungen mit konkreter Handlungsanweisung versehen & 3 & hoch \\\hline
+6.6 & Bestätigungsabfrage vor dem Löschen eines Fotos & 2 & hoch \\\hline
+6.3 & Abhängige Filter dynamisch auf gültige Werte einschränken & 2 & hoch \\\hline
+3.4 & Oberfläche durchgängig deutschsprachig gestalten & 3 & hoch \\\hline
+2.4 & Meldungsart zusätzlich im Klartext anzeigen & 2 & hoch \\\hline
+2.1 & Aktive Filter sichtbar und zentral anzeigen & 2 & mittel \\\hline
+3.3 & Warte-/Fortschrittsanzeige bei langen Vorgängen & 2 & mittel \\\hline
+2.3 & Schaltflächen nach einheitlichem Schema gestalten & 1 & niedrig \\\hline
+7.3 & Bedienelemente für Handschuhnutzung vergrößern & 1 & niedrig \\\hline
+\end{tabularx}
+}
+\end{table}

@@ -1,0 +1,92 @@
+\chapter{Diskussion}
+\label{chapter:kapitel5}
+Einordnung und Interpretation der Evaluationsergebnisse im Gesamtkontext sowie kritische Reflexion der methodischen Grenzen, 
+insbesondere der nachgelagerten Rollenübernahme als Entwickler nach Abschluss der Evaluation.
+
+\section{Interpretation der Befunde im Gesamtkontext}
+\label{gesamtkontext}
+
+Von den sieben Interaktionsprinzipien der ISO~9241-110 sind vier vollständig, zwei
+teilweise und ein Prinzip nicht erfüllt (vgl. Tabelle~\ref{tab:erfuellungsgrad}).
+Über die prinzipienweise Betrachtung in Kapitel~\ref{section:ergebnisse} hinaus
+lassen sich die elf Abweichungen zu drei Mustern verdichten.
+
+Ein erstes Muster zeigt sich bei den Kriterien~2.1, 3.3, 6.3, 6.5, 6.6, 6.8 und~6.9.
+Sie betreffen ausnahmslos Situationen, in denen die Anwendung auf Fehler, Ausnahmen
+oder Rückmeldebedarf reagieren muss, etwa bei nicht erkennbaren aktiven Filtern,
+fehlenden Warteinformationen, ungültigen Dateiformaten oder gescheiterten
+Ladevorgängen. Die unmittelbar aufgabenbezogenen Prinzipien Aufgabenangemessenheit,
+Erlernbarkeit und Steuerbarkeit sind dagegen vollständig erfüllt, was der in
+Kapitel~\ref{section:problemstellung} beschriebenen Ausgangslage entspricht, wonach
+die Anwendung bislang zwar funktional, jedoch nicht systematisch geprüft wurde.
+Mit den Kriterien~6.5, 6.8 und~6.9 sind drei der vier Abweichungen
+des Schweregrades~3 genau diesem Muster zuzuordnen.
+
+Ein zweites Muster betrifft die sprachliche Verständlichkeit der Oberfläche. Die
+Kriterien~2.4 und~3.4 (Meldungsart als SAP-Kürzel, Sprachmischung) sind mit
+Schweregrad~3 beziehungsweise~2 eingestuft. Angesichts des in
+Kapitel~\ref{section:untersuchungsgegenstand} beschriebenen Nutzungskontexts,
+insbesondere der geringen SAP-Vertrautheit der rund 20 Nutzenden und der nur
+zweimal wöchentlichen Nutzungsfrequenz, wiegen diese Befunde schwer. Das
+erforderliche Vokabular prägt sich kaum ein, sodass die Mängel strukturell die
+gesamte Zielgruppe betreffen.
+
+Ein drittes, gegenläufiges Muster zeigt Kriterium~7.3 (fehlende Anpassung an
+Handschuhnutzung). Trotz niedrigstem Schweregrad~1 weist es den unmittelbarsten
+Bezug zu den physischen Rahmenbedingungen der Produktionshalle auf. Schweregrad
+und Kontextrelevanz eines Befundes fallen demnach nicht notwendig zusammen.
+
+Der aus Tabelle~A.1 der Norm entwickelte Kriterienkatalog
+(Kapitel~\ref{section:untersuchungsdesign}) erweist sich damit, trotz der in
+Kapitel~\ref{grenzen} diskutierten Einschränkungen, als hinreichend trennscharf.
+Er macht sowohl die Erfüllung im Kernablauf als auch gezielte Abweichungen in
+Randbereichen sichtbar. Für Woodward L'Orange knüpft dies unmittelbar an die in
+Kapitel~\ref{section:problemstellung} beschriebene Ausgangslage an. An die Stelle
+einer zuvor fehlenden objektivierbaren Grundlage tritt eine priorisierte Übersicht
+identifizierter Schwachstellen (vgl. Tabelle~\ref{tab:optimierung}), wobei die
+vier Abweichungen des Schweregrades~3 vorrangig zu adressieren
+sind.\footcite[Vgl.][S.~47]{nielsen1994heuristic}
+
+\section{Methodische Grenzen der Untersuchung}
+\label{grenzen}
+
+Eine methodische Besonderheit liegt in der Rollenkonstellation des Verfassers. An der
+ursprünglichen Entwicklung der Anwendung war er nicht beteiligt und kannte diese zum
+Zeitpunkt der Evaluation noch nicht (vgl. Kapitel~\ref{section:untersuchungsdesign}), sodass
+das für Inspektionsverfahren relevante Risiko einer Betriebsblindheit gegenüber selbst
+getroffenen Gestaltungsentscheidungen zum Evaluationszeitpunkt nicht bestand. Eine
+Einschränkung ergibt sich jedoch aus der nachgelagerten Rollenübernahme. Da der Verfasser die
+identifizierten Abweichungen im Anschluss selbst als Entwickler beheben wird, lässt sich nicht
+ausschließen, dass diese bevorstehende Zuständigkeit die Schweregradbeurteilung unbewusst
+beeinflusst hat, etwa indem schwerer zu behebende Probleme niedriger eingestuft werden, um den
+eigenen späteren Aufwand zu begrenzen. Eine Kalibrierung durch einen zweiten, an der Behebung
+unbeteiligten Gutachter fand nicht statt.
+
+Diese Einschränkung verschärft sich dadurch, dass nur ein Gutachter tätig war, während für die
+heuristische Evaluation üblicherweise drei bis fünf Gutachter empfohlen
+werden.\footcite[Vgl.][S.~254 f.]{nielsen1990heuristic} Nielsen und Landauer zeigen anhand von elf
+Fallstudien, dass sich das Auffinden von Usability-Problemen mit zunehmender Gutachterzahl als
+Poisson-Prozess beschreiben lässt und ein einzelner Gutachter im Mittel nur etwa ein Drittel
+der insgesamt vorhandenen Probleme
+findet.\footcite[Vgl.][S.~206--207]{nielsen1993mathematical} Entscheidender ist eine
+strukturelle Eigenschaft ihres Modells. Da sich die Anzahl gefundener Probleme aus zwei
+zunächst unbekannten Größen zusammensetzt, lassen sich Gesamtzahl und Fundwahrscheinlichkeit
+erst ab mindestens zwei unabhängigen Evaluationsdurchläufen
+schätzen.\footcite[Vgl.][S.~208 f.]{nielsen1993mathematical} Bei nur einem Gutachter lässt sich
+folglich nicht einmal die Größenordnung der unentdeckten Probleme schätzen. Die elf
+dokumentierten Abweichungen sind daher als Teilmenge, nicht als vollständige Erhebung zu
+verstehen.
+
+Eine weitere Grenze liegt im Verfahren selbst. Die heuristische Evaluation prognostiziert
+Usability-Probleme, verifiziert deren tatsächliches Auftreten im realen Arbeitsablauf jedoch
+nicht.\footcite[Vgl.][S.~254 f.]{nielsen1990heuristic} Ob die Befunde tatsächlich zu den in
+Kapitel~\ref{section:problemstellung} beschriebenen Bedienfehlern und Zeitverlusten führen,
+bleibt daher offen. Hinzu kommt, dass der in Kapitel~\ref{section:untersuchungsgegenstand}
+beschriebene Nutzungskontext wesentlich auf einem Gespräch mit dem Meister der Instandhaltung
+beruht und nicht auf eigener Beobachtung unter Realbedingungen.
+
+Schließlich schränken zwei weitere Faktoren die Aussagekraft ein. Der Ausschluss nicht
+anwendbarer Norm-Empfehlungen (Kapitel~\ref{section:untersuchungsdesign}) beruht auf einer
+Einschätzung des Evaluators, und die Untersuchung bildet eine Momentaufnahme eines bestimmten
+Versionsstands, dessen Altsystemkontext aus SAP~R/3 mit SAP Gateway den Umsetzungsspielraum der
+Optimierungsvorschläge zusätzlich begrenzt (vgl. Kapitel~\ref{section:optimierungspotenziale}).

@@ -1,0 +1,15 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'PA1.blg'
+[114] biber-MSWIN64:342> INFO - === 
+[174] Biber.pm:421> INFO - Reading 'PA1.bcf'
+[305] Biber.pm:1002> INFO - Found 15 citekeys in bib section 0
+[317] Biber.pm:4487> INFO - Processing section 0
+[328] Biber.pm:4678> INFO - Looking for bibtex file 'includes/literatur-datenbank.bib' for section 0
+[407] bibtex.pm:1713> INFO - LaTeX decoding ...
+[426] bibtex.pm:1519> INFO - Found BibTeX data source 'includes/literatur-datenbank.bib'
+[525] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[525] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[526] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'de-DE'
+[526] Biber.pm:4313> INFO - No sort tailoring available for locale 'de-DE'
+[536] bbl.pm:676> INFO - Writing 'PA1.bbl' with encoding 'UTF-8'
+[545] bbl.pm:779> INFO - Output to PA1.bbl
